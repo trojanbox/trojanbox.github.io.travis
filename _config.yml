@@ -34,8 +34,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: justwe9517
 github_username:  justwe9517
 
-plugins_dir: /_plugins:
-
 footer: "主题使用 jekyll-theme-console 并在它的基础上就行了大幅修改"
 
 ############################################################
@@ -139,8 +137,8 @@ plugins:
   # Exclude from processing.
   # The following items will not be processed, by default. Create a custom list
   # to override the default setting.
-  exclude:
-    - Gemfile
-    - Gemfile.lock
-    - node_modules
-    - vendor
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
