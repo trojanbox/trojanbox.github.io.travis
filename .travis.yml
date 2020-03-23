@@ -9,12 +9,14 @@ before_script:
 # the `install` step will run `bundle install` by default.
 script: ./script/cibuild
 
+install: # 在安装项目环境阶段需要运行的命令，一条一行，类似的还有 before_install
+    - ./script/travis_env_init # 执行指定的 shell 脚本来做初始化
 # branch whitelist, only for GitHub Pages
-#branches:
-#    only:
-#        - master
-#        - gh-pages     # test the gh-pages branch
-#        - /pages-(.*)/ # test every branch which starts with "pages-"
+branches:
+    only:
+        - master
+        - gh-pages     # test the gh-pages branch
+        - /pages-(.*)/ # test every branch which starts with "pages-"
 
 env:
     global:
