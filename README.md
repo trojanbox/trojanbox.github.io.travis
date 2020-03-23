@@ -1,2 +1,3 @@
-# trojanbox.github.io.travis
-自动化构建
+# blog
+
+bundle exec jekyll serve

@@ -1,0 +1,4 @@
+deploy:
+    provider: GITHUB PAGES
+    # ⋮
+    edge: true
